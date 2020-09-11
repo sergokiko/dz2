@@ -1,0 +1,8 @@
+<div *ngIf="post">
+  <h1>Posts</h1>
+  <input #ele type="number">
+  <button (click)="showPost(ele.value)" >show post with ID</button>
+  <div class="posts">ID:{{post.id}} <br> Title: {{post.title}} <br> Body: {{post.body}} </div>
+</div>
+
+

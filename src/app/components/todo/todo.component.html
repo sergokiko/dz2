@@ -1,0 +1,13 @@
+
+
+<h1>My Todo list</h1>
+<div *ngIf="todoList.length < 10">
+  <input [(ngModel)]="newTodo" >
+  <button (click)="addTodo()">Add</button>
+</div>
+<ul>
+  <li *ngFor="let  todo of todoList">
+    {{todo}}
+    <button (click)="deleteTodo(todo)">remove</button>
+  </li>
+</ul>
